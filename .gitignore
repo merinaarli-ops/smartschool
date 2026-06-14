@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------------------
+# SmartSchool / CodeIgniter - ignore secrets, backups and generated data
+# ---------------------------------------------------------------------------
+
+# Database backups & dumps (may contain real student/staff PII)
+uploads/db_backup/*
+!uploads/db_backup/index.html
+uploads/db_temp/*
+!uploads/db_temp/index.html
+*.sql
+DB-backup_*.zip
+
+# Application logs
+application/logs/*
+!application/logs/index.html
+
+# Cache
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+# Stray config/views backup archives that contained secrets
+application/config/safe3.zip
+application/bupviews.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
